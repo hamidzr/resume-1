@@ -1,3 +1,7 @@
+$body-width: 750px; // currently not set
+$subtext-width: 575px;
+$delta-width: 50px;
+
 body {
   font-family: monospace;
   font-size: 12px;
@@ -21,17 +25,17 @@ h1 {
 
 .subtext {
   margin: 0px 0px 10px 50px;
-  width: 575px;
+  width: $subtext-width;
 }
 
 .doublesubtext {
   margin: 0px 0px 10px 70px;
-  width: 525px;
+  width: $subtext-width - $delta-width;
 }
 
 .triplesubtext {
   margin: 0px 0px 10px 90px;
-  width: 475px;
+  width: $subtext-width - 2 * $delta-width;
 }
 
 .bottomcut {
@@ -56,9 +60,9 @@ a, a.active, a.visited, a.hover {
   text-align: right;
   background-color: #222;
   color: #FFF;
-}
 
-.linkfloater a:link, .linkfloater a:visited, .linkfloater a:hover {
-  color: #00FF00;
-  text-decoration: underline;
+  a:link, a:visited, a:hover {
+    color: #00FF00;
+    text-decoration: underline;
+  }
 }
