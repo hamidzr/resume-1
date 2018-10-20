@@ -1,0 +1,25 @@
+{
+  "name": "resume-man",
+  "version": "1.0.0",
+  "description": "man resume",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx live-server & npm run build-watch",
+    "build-watch": "node-sass --watch --recursive --output assets --source-map true --source-map-contents assets"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamidzr/resume-man.git"
+  },
+  "author": "Hamid Zare",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hamidzr/resume-man/issues"
+  },
+  "homepage": "https://github.com/hamidzr/resume-man#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.4"
+  }
+}
