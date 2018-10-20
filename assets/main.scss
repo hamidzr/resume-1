@@ -1,45 +1,50 @@
 $body-width: 750px; // currently not set
+$font-size: 12px;
 $subtext-width: 575px;
 $delta-width: 50px;
+$subtext-left-margin: 50px;
+$delta-indent: 20px; // delta vertical indent between diff subtext levels
 
 body {
   font-family: monospace;
-  font-size: 12px;
+  font-size: $font-size;
   color: white;
   background-color: black;
-  margin: 20px 10px 0px 20px;
+  margin: 1rem 0.5rem 0 1rem;
   text-align: left;
 }
 
 .manheader {
   font-family: monospace;
-  font-size: 12px;
-  margin: 10px 0px 0px 0px;
+  font-size: $font-size;
+  margin: 10px 0 0 0;
 }
 
 h1 {
-  font-size: 12px;
+  font-size: $font-size;
   font-weight: bold;
-  margin: 15px 0px 0px 0px;
+  margin: 15px 0 0 0;
 }
 
 .subtext {
-  margin: 0px 0px 10px 50px;
+  margin: 0 0 10px $subtext-left-margin;
   width: $subtext-width;
 }
 
+// TODO move under subtext
 .doublesubtext {
-  margin: 0px 0px 10px 70px;
+  margin: 0 0 10px $subtext-left-margin + $delta-indent;
   width: $subtext-width - $delta-width;
 }
 
+// TODO move under subtext
 .triplesubtext {
-  margin: 0px 0px 10px 90px;
+  margin: 0 0 10px $subtext-left-margin + 2*$delta-indent;
   width: $subtext-width - 2 * $delta-width;
 }
 
 .bottomcut {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 a, a.active, a.visited, a.hover {
@@ -48,7 +53,7 @@ a, a.active, a.visited, a.hover {
 }
 
 .footer {
-  margin: 10px 0px 20px 0px;
+  margin: 0.5rem 0 1.5rem 0;
   color: #666;
 }
 
