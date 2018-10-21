@@ -18,3 +18,18 @@ if (!document.cookie.includes('isWarned')) {
   document.cookie = 'isWarned=true';
 }
 
+
+// spaces out a 3 part man header
+function spaceOut(parent) {
+  let spans = Array.from(parent.querySelectorAll('span'));
+  // calc the empty space
+  // can't use reduce.. why?
+  const totalOccupied = spans.map(s => s.clientWidth).reduce((a, b) => a + b);
+  const totalEmpty = parent.clientWidth - totalOccupied;
+
+  // position the middle element
+  spans[1].style.left = (totalEmpty/2 + spans[0].clientWidth) + 'px';
+}
+
+// fix spacing for all .manheader
+Array.from(document.querySelectorAll('.manheader')).forEach(spaceOut);

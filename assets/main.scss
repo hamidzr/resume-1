@@ -1,4 +1,4 @@
-$body-width: 750px; // currently not set
+$body-width: 650px;
 $font-size: 12px;
 $subtext-width: 575px;
 $delta-width: 50px;
@@ -14,10 +14,29 @@ body {
   text-align: left;
 }
 
+// always has 3 spans
 .manheader {
-  font-family: monospace;
-  font-size: $font-size;
   margin: 10px 0 0 0;
+  height: 28px;
+  position: relative;
+  max-width: $body-width;
+
+  span {
+    position: absolute;
+    top: 0.5rem;
+  }
+
+  span:nth-child(1) {
+    left: 0;
+  }
+
+  span:nth-child(2) {
+    left: 40%;
+  }
+
+  span:nth-child(3) {
+    right: 0;
+  }
 }
 
 h1 {
@@ -26,21 +45,23 @@ h1 {
   margin: 15px 0 0 0;
 }
 
+p {
+  margin: 0 0 10px 0;
+}
+
 .subtext {
-  margin: 0 0 10px $subtext-left-margin;
+  margin-left: $subtext-left-margin;
   width: $subtext-width;
 }
 
-// TODO move under subtext
 .doublesubtext {
-  margin: 0 0 10px $subtext-left-margin + $delta-indent;
+  margin-left: $subtext-left-margin + $delta-indent;
   width: $subtext-width - $delta-width;
 }
 
-// TODO move under subtext
 .triplesubtext {
-  margin: 0 0 10px $subtext-left-margin + 2*$delta-indent;
-  width: $subtext-width - 2 * $delta-width;
+  margin-left: $subtext-left-margin + 2*$delta-indent;
+  width: $subtext-width - 2*$delta-width;
 }
 
 .bottomcut {
