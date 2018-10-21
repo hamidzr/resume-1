@@ -1,9 +1,25 @@
-$body-width: 650px;
+$man-width: 40rem;
 $font-size: 12px;
-$subtext-width: 575px;
-$delta-width: 50px;
-$subtext-left-margin: 50px;
-$delta-indent: 20px; // delta vertical indent between diff subtext levels
+$subtext-width: $man-width - 4rem;
+$delta-width: 3rem;
+$subtext-left-margin: 3rem;
+$delta-indent: $delta-width/2; // delta vertical indent between diff subtext levels
+
+// responsive media queries
+$screen-xs-min: 356px;
+$screen-sm-min: 576px; // small tablets and large smartphones (landscape view)
+
+@mixin xs {
+  @media (max-width: #{$screen-xs-min}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
 
 body {
   font-family: monospace;
@@ -14,12 +30,18 @@ body {
   text-align: left;
 }
 
+// man content container
+.mancontent {
+  max-width: $man-width - 1rem;
+  padding-right: 1rem;
+}
+
 // always has 3 spans
 .manheader {
   margin: 0.5rem 0;
   height: 1rem;
   position: relative;
-  max-width: $body-width;
+  max-width: $man-width;
 
   span {
     position: absolute;
@@ -50,17 +72,38 @@ p {
 
 .subtext {
   margin-left: $subtext-left-margin;
-  width: $subtext-width;
+  max-width: $subtext-width;
+  @include sm {
+    $subtext-left-margin: $subtext-left-margin / 3;
+    margin-left: $subtext-left-margin;
+    max-width: $subtext-width;
+  }
 }
 
 .doublesubtext {
   margin-left: $subtext-left-margin + $delta-indent;
-  width: $subtext-width - $delta-width;
+  max-width: $subtext-width - $delta-width;
+
+  @include sm {
+    $subtext-left-margin: $subtext-left-margin / 3;
+    $delta-indent: $delta-indent / 1.5;
+    $delta-width: $delta-width / 1.5;
+    margin-left: $subtext-left-margin + $delta-indent;
+    max-width: $subtext-width - $delta-width;
+  }
 }
 
 .triplesubtext {
   margin-left: $subtext-left-margin + 2*$delta-indent;
-  width: $subtext-width - 2*$delta-width;
+  max-width: $subtext-width - 2*$delta-width;
+
+  @include sm {
+    $subtext-left-margin: $subtext-left-margin / 3;
+    $delta-indent: $delta-indent / 1.5;
+    $delta-width: $delta-width / 1.5;
+    margin-left: $subtext-left-margin + 2*$delta-indent;
+    max-width: $subtext-width - 2*$delta-width;
+  }
 }
 
 .bottomcut {
@@ -79,12 +122,17 @@ a, a.active, a.visited, a.hover {
 
 .linkfloater {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  padding: 5px;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
   text-align: right;
   background-color: #222;
   color: #FFF;
+
+  @include sm {
+    // TODO make linkfloater responsive
+    display: none;
+  }
 
   a:link, a:visited, a:hover {
     color: #00FF00;

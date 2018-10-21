@@ -6,11 +6,15 @@ body {
   margin: 1rem 0.5rem 0 1rem;
   text-align: left; }
 
+.mancontent {
+  max-width: 39rem;
+  padding-right: 1rem; }
+
 .manheader {
   margin: 0.5rem 0;
   height: 1rem;
   position: relative;
-  max-width: 650px; }
+  max-width: 40rem; }
   .manheader span {
     position: absolute; }
   .manheader span:nth-child(1) {
@@ -29,16 +33,28 @@ p {
   margin: 0 0 10px 0; }
 
 .subtext {
-  margin-left: 50px;
-  width: 575px; }
+  margin-left: 3rem;
+  max-width: 36rem; }
+  @media (max-width: 576px) {
+    .subtext {
+      margin-left: 1rem;
+      max-width: 36rem; } }
 
 .doublesubtext {
-  margin-left: 70px;
-  width: 525px; }
+  margin-left: 4.5rem;
+  max-width: 33rem; }
+  @media (max-width: 576px) {
+    .doublesubtext {
+      margin-left: 2rem;
+      max-width: 34rem; } }
 
 .triplesubtext {
-  margin-left: 90px;
-  width: 475px; }
+  margin-left: 6rem;
+  max-width: 30rem; }
+  @media (max-width: 576px) {
+    .triplesubtext {
+      margin-left: 3rem;
+      max-width: 32rem; } }
 
 .bottomcut {
   margin-bottom: 0; }
@@ -53,12 +69,15 @@ a, a.active, a.visited, a.hover {
 
 .linkfloater {
   position: absolute;
-  top: 5px;
-  right: 5px;
-  padding: 5px;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
   text-align: right;
   background-color: #222;
   color: #FFF; }
+  @media (max-width: 576px) {
+    .linkfloater {
+      display: none; } }
   .linkfloater a:link, .linkfloater a:visited, .linkfloater a:hover {
     color: #00FF00;
     text-decoration: underline; }
