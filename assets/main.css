@@ -7,13 +7,12 @@ body {
   text-align: left; }
 
 .manheader {
-  margin: 10px 0 0 0;
-  height: 28px;
+  margin: 0.5rem 0;
+  height: 1rem;
   position: relative;
   max-width: 650px; }
   .manheader span {
-    position: absolute;
-    top: 0.5rem; }
+    position: absolute; }
   .manheader span:nth-child(1) {
     left: 0; }
   .manheader span:nth-child(2) {

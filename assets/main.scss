@@ -16,14 +16,13 @@ body {
 
 // always has 3 spans
 .manheader {
-  margin: 10px 0 0 0;
-  height: 28px;
+  margin: 0.5rem 0;
+  height: 1rem;
   position: relative;
   max-width: $body-width;
 
   span {
     position: absolute;
-    top: 0.5rem;
   }
 
   span:nth-child(1) {
