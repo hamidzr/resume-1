@@ -4,6 +4,7 @@ $subtext-width: $man-width - 4rem;
 $delta-width: 3rem;
 $subtext-left-margin: 3rem;
 $delta-indent: $delta-width/2; // delta vertical indent between diff subtext levels
+$subtext-margin-bottom: 0.6rem;
 
 // responsive media queries
 $screen-xs-min: 356px;
@@ -68,7 +69,7 @@ h1 {
 }
 
 p {
-  margin: 0 0 10px 0;
+  margin: 0 0 $subtext-margin-bottom 0;
 }
 
 .subtext {
@@ -82,6 +83,7 @@ p {
 }
 
 .doublesubtext {
+  margin-bottom: $subtext-margin-bottom - 0.1rem;
   margin-left: $subtext-left-margin + $delta-indent;
   max-width: $subtext-width - $delta-width;
 
@@ -95,6 +97,7 @@ p {
 }
 
 .triplesubtext {
+  margin-bottom: $subtext-margin-bottom - 0.2rem;
   margin-left: $subtext-left-margin + 2*$delta-indent;
   max-width: $subtext-width - 2*$delta-width;
 
