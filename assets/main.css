@@ -27,6 +27,7 @@ body {
 h1 {
   font-size: 12px;
   font-weight: bold;
+  text-transform: uppercase;
   margin: 15px 0 0 0; }
 
 p {
