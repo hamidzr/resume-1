@@ -13,7 +13,7 @@ gtag('config', 'UA-83673341-2');
 
 // setup a onetime warning
 if (!document.cookie.includes('isWarned')) {
-  const WARNING = 'This page is still unfinished and the information provided here might be inaccurate and not mine.';
+  const WARNING = 'This page is a work in progress, consider looking at the pdf version.';
   setTimeout(() => alert(WARNING), 3000);
   document.cookie = 'isWarned=true';
 }
