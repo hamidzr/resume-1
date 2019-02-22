@@ -1,0 +1,25 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Hamid(7) - Man page",
+    "scope": "/",
+    "display": "fullscreen",
+    "start_url": ".",
+    "short_name": "Hamid",
+    "theme_color": "black",
+    "description": "Hamid's man page. A man page (short for manual page) is a form of software documentation usually found on a Unix or Unix-like operating system.",
+    "orientation": "any",
+    "background_color": "black",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "16x16 32x32 48x48"
+        },
+        {
+            "src": "/favicon.ico",
+            "sizes": "16x16 32x32 48x48"
+        }
+    ]
+}
