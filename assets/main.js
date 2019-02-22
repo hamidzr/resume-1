@@ -7,7 +7,7 @@ gtag('js', new Date());
 gtag('config', 'UA-83673341-2');
 
 // User Heat Tag
-(function(add, cla) {window['UserHeatTag']=cla;window[cla]=window[cla]||function() {(window[cla].q=window[cla].q||[]).push(arguments);}, window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul, tag);})('//uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uha71AZEbd'});
+(function(add, cla) {window['UserHeatTag']=cla;window[cla]=window[cla]||function() {(window[cla].q=window[cla].q||[]).push(arguments);}, window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul, tag);})('https://uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uha71AZEbd'});
 // End User Heat Tag
 
 
