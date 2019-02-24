@@ -3,7 +3,7 @@
     "lang": "en",
     "name": "Hamid(7) - Man page",
     "scope": "/",
-    "display": "fullscreen",
+    "display": "standalone",
     "start_url": ".",
     "short_name": "Hamid",
     "theme_color": "black",
