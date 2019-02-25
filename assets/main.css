@@ -28,7 +28,7 @@ body {
 .manheader span:nth-child(3) {
   right: 0; }
 
-h1 {
+h2 {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
@@ -94,6 +94,7 @@ a, a.active, a.visited, a.hover {
   color: #00FF00;
   text-decoration: underline; }
 
+/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
