@@ -28,7 +28,7 @@ body {
 .manheader span:nth-child(3) {
   right: 0; }
 
-h2 {
+h1 {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
@@ -75,7 +75,7 @@ a, a.active, a.visited, a.hover {
 
 .footer {
   margin: 0.5rem 0 1.5rem 0;
-  color: #666; }
+  color: #555; }
 
 .linkfloater {
   position: absolute;
@@ -94,7 +94,6 @@ a, a.active, a.visited, a.hover {
   color: #00FF00;
   text-decoration: underline; }
 
-/*# sourceMappingURL=main.css.map */
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
