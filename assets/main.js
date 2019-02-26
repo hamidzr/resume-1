@@ -11,14 +11,6 @@ gtag('config', 'UA-83673341-2');
 // End User Heat Tag
 
 
-// setup a onetime warning
-if (!document.cookie.includes('isWarned')) {
-  const WARNING = 'This page is a work in progress, consider looking at the pdf version.';
-  setTimeout(() => alert(WARNING), 3000);
-  document.cookie = 'isWarned=true';
-}
-
-
 // spaces out a 3 part man header
 function spaceOut(parent) {
   let spans = Array.from(parent.querySelectorAll('span'));
