@@ -7,16 +7,8 @@ gtag('js', new Date());
 gtag('config', 'UA-83673341-2');
 
 // User Heat Tag
-(function(add, cla) {window['UserHeatTag']=cla;window[cla]=window[cla]||function() {(window[cla].q=window[cla].q||[]).push(arguments);}, window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul, tag);})('//uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uha71AZEbd'});
+(function(add, cla) {window['UserHeatTag']=cla;window[cla]=window[cla]||function() {(window[cla].q=window[cla].q||[]).push(arguments);}, window[cla].l=1*new Date();var ul=document.createElement('script');var tag = document.getElementsByTagName('script')[0];ul.async=1;ul.src=add;tag.parentNode.insertBefore(ul, tag);})('https://uh.nakanohito.jp/uhj2/uh.js', '_uhtracker');_uhtracker({id:'uha71AZEbd'});
 // End User Heat Tag
-
-
-// setup a onetime warning
-if (!document.cookie.includes('isWarned')) {
-  const WARNING = 'This page is still unfinished and the information provided here might be inaccurate and not mine.';
-  setTimeout(() => alert(WARNING), 3000);
-  document.cookie = 'isWarned=true';
-}
 
 
 // spaces out a 3 part man header
@@ -33,3 +25,19 @@ function spaceOut(parent) {
 
 // fix spacing for all .manheader
 Array.from(document.querySelectorAll('.manheader')).forEach(spaceOut);
+
+
+// **** service worker pwa
+
+//This is the "Offline copy of pages" service worker
+//Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+  //Register the ServiceWorker
+  navigator.serviceWorker.register('service-worker.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
+}
