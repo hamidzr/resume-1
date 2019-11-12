@@ -9,6 +9,7 @@ $subtext-margin-bottom: 0.6rem;
 // responsive media queries
 $screen-xs-min: 356px;
 $screen-sm-min: 576px; // small tablets and large smartphones (landscape view)
+$screen-lg-min: 1200px;
 
 @mixin xs {
   @media (max-width: #{$screen-xs-min}) {
@@ -21,6 +22,13 @@ $screen-sm-min: 576px; // small tablets and large smartphones (landscape view)
     @content;
   }
 }
+
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
 
 body {
   font-family: monospace;
