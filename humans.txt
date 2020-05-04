@@ -6,7 +6,7 @@
 
 /* MAIN */
   Author: Hamid Zare
-  Site: http://man.hamidzare.xyz/
+  Site: http://man.hamidza.re/
 
 /* SITE */
   IDE: NeoVIM
