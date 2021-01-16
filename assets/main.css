@@ -1,31 +1,35 @@
 body {
   font-family: monospace;
-  font-size: 12px;
+  font-size: 1.1rem;
   color: white;
   background-color: black;
   margin: 1rem 0.5rem 0 1rem;
   text-align: left; }
 
 .mancontent {
-  max-width: 39rem;
+  max-width: 59rem;
   padding-right: 1rem; }
 
 .manheader {
   margin: 0.5rem 0;
   height: 1rem;
   position: relative;
-  max-width: 40rem; }
-  .manheader span {
-    position: absolute; }
-  .manheader span:nth-child(1) {
-    left: 0; }
-  .manheader span:nth-child(2) {
-    left: 40%; }
-  .manheader span:nth-child(3) {
-    right: 0; }
+  max-width: 60rem; }
+
+.manheader span {
+  position: absolute; }
+
+.manheader span:nth-child(1) {
+  left: 0; }
+
+.manheader span:nth-child(2) {
+  left: 40%; }
+
+.manheader span:nth-child(3) {
+  right: 0; }
 
 h2 {
-  font-size: 12px;
+  font-size: 1.1rem;
   font-weight: bold;
   text-transform: uppercase;
   margin: 0.7rem 0 0.3rem 0; }
@@ -35,29 +39,32 @@ p {
 
 .subtext {
   margin-left: 3rem;
-  max-width: 36rem; }
-  @media (max-width: 576px) {
-    .subtext {
-      margin-left: 1rem;
-      max-width: 36rem; } }
+  max-width: 56rem; }
+
+@media (max-width: 576px) {
+  .subtext {
+    margin-left: 1rem;
+    max-width: 56rem; } }
 
 .doublesubtext {
   margin-bottom: 0.5rem;
   margin-left: 4.5rem;
-  max-width: 33rem; }
-  @media (max-width: 576px) {
-    .doublesubtext {
-      margin-left: 2rem;
-      max-width: 34rem; } }
+  max-width: 53rem; }
+
+@media (max-width: 576px) {
+  .doublesubtext {
+    margin-left: 2rem;
+    max-width: 54rem; } }
 
 .triplesubtext {
   margin-bottom: 0.4rem;
   margin-left: 6rem;
-  max-width: 30rem; }
-  @media (max-width: 576px) {
-    .triplesubtext {
-      margin-left: 3rem;
-      max-width: 32rem; } }
+  max-width: 50rem; }
+
+@media (max-width: 576px) {
+  .triplesubtext {
+    margin-left: 3rem;
+    max-width: 52rem; } }
 
 .bottomcut {
   margin-bottom: 0; }
@@ -78,9 +85,15 @@ a, a.active, a.visited, a.hover {
   text-align: right;
   background-color: #222;
   color: #FFF; }
-  @media (max-width: 576px) {
-    .linkfloater {
-      display: none; } }
-  .linkfloater a:link, .linkfloater a:visited, .linkfloater a:hover {
-    color: #00FF00;
-    text-decoration: underline; }
+
+@media (max-width: 576px) {
+  .linkfloater {
+    display: none; } }
+
+.linkfloater a:link, .linkfloater a:visited, .linkfloater a:hover {
+  color: #00FF00;
+  text-decoration: underline; }
+
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */
